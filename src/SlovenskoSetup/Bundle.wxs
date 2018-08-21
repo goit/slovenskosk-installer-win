@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Slovensko.sk Installer
+    Copyright (C) 2018 Jozef Izso
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
+  <Bundle Name="Slovensko.sk"
+          Version="0.1.0.0"
+          Manufacturer="Jozef Izso"
+          UpgradeCode="dbd1c04b-f738-4dea-a731-1fdbd751f4d4">
+
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
+      <bal:WixStandardBootstrapperApplication LicenseUrl="" />
+    </BootstrapperApplicationRef>
+
+    <Log Disable="no" Prefix="SlovenskoSetup" Extension=".log" />
+
+    <Chain>
+      <MsiPackage Id="eID_klient_msi"
+                  Name="3rdParty\eID_klient.msi"
+                  SourceFile="..\..\lib\eID_klient.msi"
+                  DownloadUrl="https://eidas.minv.sk/TCTokenService/download/eID_klient.msi"
+                  DisplayName="eID klient"
+                  Visible="yes"
+                  Compressed="no"
+       />
+    </Chain>
+  </Bundle>
+</Wix>

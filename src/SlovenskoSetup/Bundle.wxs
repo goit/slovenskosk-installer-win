@@ -21,7 +21,8 @@
   <Bundle Name="Slovensko.sk"
           Version="0.1.0.0"
           Manufacturer="Jozef Izso"
-          UpgradeCode="dbd1c04b-f738-4dea-a731-1fdbd751f4d4">
+          UpgradeCode="dbd1c04b-f738-4dea-a731-1fdbd751f4d4"
+          IconSourceFile="..\..\assets\nases.ico">
 
     <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
       <bal:WixStandardBootstrapperApplication LicenseUrl="" />

@@ -31,6 +31,16 @@
     <Log Disable="no" Prefix="SlovenskoSetup" Extension=".log" />
 
     <Chain>
+      
+      <ExePackage Id="GemPcCCID_exe"
+                  Name="3rdParty\GemPcCCID.exe"
+                  SourceFile="..\..\lib\GemPcCCID.exe"
+                  DownloadUrl="http://support.gemalto.com/fileadmin/user_upload/drivers/GemPC_CCID_Generic/GemPcCCID.exe"
+                  DisplayName="Gemalto CCID Driver"
+                  Description="Ovládač pre čítačku čipových kariet Gemalto"
+                  Compressed="no"
+      />
+
       <MsiPackage Id="eID_klient_msi"
                   Name="3rdParty\eID_klient.msi"
                   SourceFile="..\..\lib\eID_klient.msi"

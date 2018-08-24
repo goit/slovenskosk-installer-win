@@ -32,13 +32,23 @@
 
     <Chain>
       
-      <ExePackage Id="GemPcCCID_exe"
-                  Name="3rdParty\GemPcCCID.exe"
-                  SourceFile="..\..\lib\GemPcCCID.exe"
-                  DownloadUrl="http://support.gemalto.com/fileadmin/user_upload/drivers/GemPC_CCID_Generic/GemPcCCID.exe"
-                  DisplayName="Gemalto CCID Driver"
-                  Description="Ovládač pre čítačku čipových kariet Gemalto"
-                  Compressed="no"
+      <MsiPackage Id="GemPcCCID_sk_sk_32_msi"
+                  Name="3rdParty\GemPcCCID_sk-sk_32.msi"
+                  SourceFile="..\..\lib\gemalto\GemPcCCID_sk-sk_32.msi"
+                  DisplayName="Gemalto CCID Driver (32-bit)"
+                  Description="Ovládač pre čítačku čipových kariet Gemalto (32-bit)"
+                  Visible="yes"
+                  Compressed="yes"
+                  InstallCondition="NOT VersionNT64"
+      />
+      <MsiPackage Id="GemPcCCID_sk_sk_64_msi"
+                  Name="3rdParty\GemPcCCID_sk-sk_64.msi"
+                  SourceFile="..\..\lib\gemalto\GemPcCCID_sk-sk_64.msi"
+                  DisplayName="Gemalto CCID Driver (64-bit)"
+                  Description="Ovládač pre čítačku čipových kariet Gemalto (64-bit)"
+                  Visible="yes"
+                  Compressed="yes"
+                  InstallCondition="VersionNT64"
       />
 
       <MsiPackage Id="eID_klient_msi"

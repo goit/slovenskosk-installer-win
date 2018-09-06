@@ -24,8 +24,11 @@
           UpgradeCode="dbd1c04b-f738-4dea-a731-1fdbd751f4d4"
           IconSourceFile="..\..\assets\nases.ico">
 
-    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLicense">
-      <bal:WixStandardBootstrapperApplication LicenseUrl="" />
+    <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkLargeLicense">
+      <bal:WixStandardBootstrapperApplication LicenseUrl=""
+                                              ThemeFile="Resources\HyperlinkLargeTheme.xml"
+                                              ShowVersion="yes"
+                                              />
     </BootstrapperApplicationRef>
 
     <Log Disable="no" Prefix="SlovenskoSetup" Extension=".log" />

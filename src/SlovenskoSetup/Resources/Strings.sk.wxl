@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) .NET Foundation and contributors. All rights reserved. Licensed under the Microsoft Reciprocal License. See LICENSE.TXT file in the project root for full license information. -->
+
+
+<WixLocalization Culture="sk-SK" Language="1051" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+  <String Id="Caption">[WixBundleName] – inštalácia</String>
+  <String Id="Title">[WixBundleName]</String>
+  <String Id="InstallHeader">Vitajte</String>
+  <String Id="InstallMessage">Setup will install [WixBundleName] on your computer. Click install to continue, options to set the install directory or Close to exit.</String>
+  <String Id="InstallVersion">Verzia [WixBundleVersion]</String>
+  <String Id="ConfirmCancelMessage">Naozaj chcete zrušiť operáciu?</String>
+  <String Id="ExecuteUpgradeRelatedBundleMessage">Predchádzajúca verzia</String>
+  <String Id="HelpHeader">Pomocník pre inštaláciu</String>
+  <String Id="HelpText">/install | /repair | /uninstall | /layout [directory] - installs, repairs, uninstalls or
+   creates a complete local copy of the bundle in directory. Install is the default.
+
+/passive | /quiet – zobrazí minimálne používateľské rozhranie bez výziev alebo
+   nezobrazí žiadne používateľské rozhranie ani výzvy. Predvolene sa
+   zobrazuje používateľské rozhranie aj všetky výzvy.
+
+/norestart   – zruší všetky pokusy o reštart. Používateľské rozhranie
+   predvolene zobrazí pred reštartom výzvu.
+/log log.txt – urobí záznam do určeného súboru. Súbor denníka sa predvolene
+   vytvorí v priečinku %TEMP%.</String>
+  <String Id="HelpCloseButton">&amp;Zavrieť</String>
+  <String Id="InstallLicenseLinkText">[WixBundleName] &lt;a href="#"&gt;licenčná zmluva&lt;/a&gt;.</String>
+  <String Id="InstallAcceptCheckbox">&amp;Súhlasím s licenčnou zmluvou a podmienkami</String>
+  <String Id="InstallOptionsButton">&amp;Nastavenia</String>
+  <String Id="InstallInstallButton">&amp;Inštalovať</String>
+  <String Id="InstallCloseButton">&amp;Zavrieť</String>
+  <String Id="OptionsHeader">Nastavenia</String>
+  <String Id="OptionsLocationLabel">Priečinok:</String>
+  <String Id="OptionsBrowseButton">&amp;Prehľadať...</String>
+  <String Id="OptionsOkButton">&amp;OK</String>
+  <String Id="OptionsCancelButton">&amp;Zrušiť</String>
+  <String Id="ProgressHeader">Priebeh inštalácie</String>
+  <String Id="ProgressLabel">Spracúva sa:</String>
+  <String Id="OverallProgressPackageText">Inicializuje sa...</String>
+  <String Id="ProgressCancelButton">&amp;Zrušiť</String>
+  <String Id="ModifyHeader">Zmeniť inštaláciu</String>
+  <String Id="ModifyRepairButton">&amp;Opraviť</String>
+  <String Id="ModifyUninstallButton">O&amp;dinštalovať</String>
+  <String Id="ModifyCloseButton">&amp;Zavrieť</String>
+  <String Id="SuccessRepairHeader">Repair Successfully Completed</String>
+  <String Id="SuccessUninstallHeader">Uninstall Successfully Completed</String>
+  <String Id="SuccessInstallHeader">Installation Successfully Completed</String> 
+  <String Id="SuccessHeader">Inštalácia bola úspešná</String>	
+  <String Id="SuccessLaunchButton">&amp;Spustiť</String>
+  <String Id="SuccessRestartText">You must restart your computer before you can use the software.</String>
+  <String Id="SuccessRestartButton">&amp;Reštartovať</String>
+  <String Id="SuccessCloseButton">&amp;Zavrieť</String>
+  <String Id="FailureHeader">Inštalácia zlyhala</String>
+  <String Id="FailureInstallHeader">Inštalácia zlyhala</String>
+  <String Id="FailureUninstallHeader">Odinštalovanie zlyhalo</String>
+  <String Id="FailureRepairHeader">Oprava zlyhala</String> 
+  <String Id="FailureHyperlinkLogText">Inštalácia zlyhala pre jednu alebo viac príčin. Odstráňte problémy a skúste znova spustiť inštaláciu. Ďalšie informácie nájdete v &lt;a href="#"&gt;súbore denníka&lt;/a&gt;.</String>
+  <String Id="FailureRestartText">Dokončenie všetkých zmien softvéru vyžaduje reštart počítača.</String>
+  <String Id="FailureRestartButton">&amp;Reštartovať</String>
+  <String Id="FailureCloseButton">&amp;Zavrieť</String>
+  <String Id="FilesInUseHeader">Files In Use</String>
+  <String Id="FilesInUseLabel">The following applications are using files that need to be updated:</String>
+  <String Id="FilesInUseCloseRadioButton">Close the &amp;applications and attempt to restart them.</String>
+  <String Id="FilesInUseDontCloseRadioButton">&amp;Do not close applications. A reboot will be required.</String>
+  <String Id="FilesInUseOkButton">&amp;OK</String>
+  <String Id="FilesInUseCancelButton">&amp;Zrušiť</String>
+  <String Id="ErrorFailNoActionReboot">No action was taken as a system reboot is required.</String>
+</WixLocalization>

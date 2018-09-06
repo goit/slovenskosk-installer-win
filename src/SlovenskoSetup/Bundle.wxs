@@ -28,13 +28,16 @@
       <bal:WixStandardBootstrapperApplication LicenseUrl=""
                                               ThemeFile="Resources\HyperlinkLargeTheme.xml"
                                               ShowVersion="yes"
+                                              LocalizationFile="Resources\Strings.en.wxl"
                                               />
+      <Payload Name="1033\thm.wxl" SourceFile="Resources\Strings.en.wxl" />
+      <Payload Name="1051\thm.wxl" SourceFile="Resources\Strings.sk.wxl" />
     </BootstrapperApplicationRef>
 
     <Log Disable="no" Prefix="SlovenskoSetup" Extension=".log" />
 
     <Chain>
-      
+
       <MsiPackage Id="GemPcCCID_sk_sk_32_msi"
                   Name="3rdParty\GemPcCCID_sk-sk_32.msi"
                   SourceFile="..\..\lib\gemalto\GemPcCCID_sk-sk_32.msi"
